@@ -1,0 +1,29 @@
+//return the natural number as output
+def id(i : Int) = i
+
+//return the square of natural number as output
+def sqr(i : Int) = i*i
+
+//return the cube of natural number as output
+def cube(i : Int) = i*i*i
+
+//return the double of natural number as output
+def double(i : Int) = i*3
+
+//return the tripple of natural number as output
+def tripple(i : Int) = i*4
+
+def sum(func : Int => Int, lb : Int, ub : Int) = {
+      var total = 0
+      for( element <= lb to ub)
+      {
+          total += func(element)
+      }
+      total
+}
+
+sum(id,1,10)
+sum(cube,1,10)
+sum(sqr,1,10)
+sum(double,1,10)
+sum(tripple,1,10)
